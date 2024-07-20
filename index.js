@@ -24,6 +24,10 @@ console.log("Server started");
 // connect to DB
 connectDb(dbUrl)
 
+app.get('/', (req, res) => {
+  res.send('BetaHouse Backend');
+});
+
 // Routes
 app.use("/api/auth", authRouter)
 app.use("/api", userRouter)
