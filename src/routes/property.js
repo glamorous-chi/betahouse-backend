@@ -1,7 +1,6 @@
 import express from 'express';
 import { createProperty, deletePropertyById, getAllProperties, getBySlug, getPropertyById, searchProperty, updateProperty} from '../controllers/property.js';
 import { upload } from '../helpers/multer.js';
-import { isAdmin } from '../middlewares/auth.js';
 
 const router = express.Router();
 

@@ -1,5 +1,5 @@
 import { connectDb } from "./src/db.config.js";
-import cors from 'cors'
+// import cors from 'cors'
 import dotenv from "dotenv";
 import express from "express";
 import userRouter from "./src/routes/user.js"
