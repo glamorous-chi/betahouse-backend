@@ -14,10 +14,7 @@ cloudinary.config({
 const storage = new CloudinaryStorage({
     cloudinary: cloudinary,
     params: {
-        allowedFormats: ['svg', 'png', 'jpg', 'jpeg', 'gif', 'webp'],
-        transformation: [
-            {width: 300, height: 300, crop:'fill', gravity:'face', quality:'auto'}
-        ]
+        allowedFormats: ['svg', 'png', 'jpg', 'jpeg', 'gif', 'webp']
     }
 })
 
