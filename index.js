@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json())
 
 let corsOptions = { 
-    origin : ['http://localhost:5173','https://betahouse.vercel.app/', 'http://localhost:5174', 'http://localhost:3000'], 
+    origin : ['http://localhost:5173','https://betahouse.vercel.app', 'http://localhost:5174', 'http://localhost:3000'], 
   } 
 app.use(cors(corsOptions)); //these are the cors allowed origin
 
